@@ -42,13 +42,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Back to Top Button
   const backToTop = document.getElementById("back-to-top");
+  
+  // Combined scroll event for multiple effects
   window.addEventListener("scroll", function() {
-      if (window.scrollY > 300) {
+      const scrollY = window.scrollY;
+      
+      // Sticky header effect
+      const header = document.getElementById("header");
+      if (scrollY > 50) {
+          header.classList.add("scrolled");
+      } else {
+          header.classList.remove("scrolled");
+      }
+      
+      // Parallax effect on hero section
+      const hero = document.getElementById("hero");
+      if (hero) {
+         hero.style.backgroundPositionY = -(scrollY * 0.5) + "px";
+      }
+      
+      // Back to Top Button visibility
+      if (scrollY > 300) {
           backToTop.style.display = "block";
       } else {
           backToTop.style.display = "none";
       }
   });
+  
   backToTop.addEventListener("click", function() {
       window.scrollTo({
           top: 0,
