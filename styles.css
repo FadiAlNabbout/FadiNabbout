@@ -47,6 +47,11 @@ header {
   left: 0;
   background: rgba(51, 51, 51, 0.9);
   z-index: 1000;
+  transition: background 0.3s;
+}
+header.scrolled {
+  background: rgba(51, 51, 51, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .navbar {
   max-width: 1200px;
@@ -105,10 +110,11 @@ header {
   transition: all 0.3s;
 }
 
-/* Hero Section */
+/* Hero Section with Parallax */
 #hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('hero-bg.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('hero-bg.svg') center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,9 +138,11 @@ header {
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
   font-size: 1rem;
-  transition: background 0.3s;
+  transition: transform 0.2s, background 0.2s;
+  margin-top: 1rem;
 }
 .hero-content .btn:hover {
+  transform: scale(1.05);
   background: #0056b3;
 }
 
@@ -216,6 +224,29 @@ p {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0,0,0,0.05);
 }
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+/* Button Styling with Microinteractions */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #007BFF;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: transform 0.2s, background 0.2s;
+  margin-top: 1rem;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background: #0056b3;
+}
 
 /* Contact Section */
 #contact a {
@@ -257,22 +288,6 @@ footer {
 footer p {
   font-size: 0.9rem;
 }
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  background: #007BFF;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background 0.3s;
-  margin-top: 1rem;
-}
-.btn:hover {
-  background: #0056b3;
-}
-
 
 /* Dark Mode Styles */
 body.dark-mode {
