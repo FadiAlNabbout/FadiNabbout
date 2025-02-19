@@ -258,6 +258,22 @@ footer p {
   font-size: 0.9rem;
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #007BFF;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+.btn:hover {
+  background: #0056b3;
+}
+
+
 /* Dark Mode Styles */
 body.dark-mode {
   background: #222;
