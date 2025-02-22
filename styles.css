@@ -82,6 +82,12 @@ header.scrolled {
 .navbar .nav-links li a:hover {
   color: #007BFF;
 }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .dark-mode-toggle button {
   background: #007BFF;
   border: none;
