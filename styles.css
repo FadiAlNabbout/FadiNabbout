@@ -120,7 +120,7 @@ header.scrolled {
 /* Hero Section with Parallax */
 #hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('hero-bg.svg') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('hero-bg.jpg') center/cover no-repeat;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -314,6 +314,12 @@ body.dark-mode .section {
   background: #333;
   color: #ddd;
 }
+body.dark-mode .cert-card {
+  background: #444;
+  color: #ddd;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
 body.dark-mode .edu-item,
 body.dark-mode .experience-item,
 body.dark-mode .project-item {
