@@ -39,6 +39,16 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("dark-mode-btn").addEventListener("click", function() {
       document.body.classList.toggle("dark-mode");
   });
+  
+  document.getElementById("dark-mode-btn").addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+        this.textContent = " Light Mode";
+    } else {
+        this.textContent = " Dark Mode";
+    }
+});
+
 
   // Back to Top Button
   const backToTop = document.getElementById("back-to-top");
