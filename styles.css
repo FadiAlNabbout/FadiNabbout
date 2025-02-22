@@ -92,14 +92,14 @@ header.scrolled {
 }
 
 .dark-mode-toggle button {
+  text-decoration: none;
   background: #007BFF;
-  border: none;
-  padding: 3px 6px;
   color: #fff;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  transition: background 0.3s;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: transform 0.2s, background 0.2s;
+  margin-top: 1rem;
 }
 .dark-mode-toggle button:hover {
   background: #0056b3;
