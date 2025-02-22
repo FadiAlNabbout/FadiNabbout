@@ -35,18 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 
-  // Dark Mode Toggle
-  document.getElementById("dark-mode-btn").addEventListener("click", function() {
-      document.body.classList.toggle("dark-mode");
-  });
-  
-  document.getElementById("dark-mode-btn").addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-    if (document.body.classList.contains("dark-mode")) {
-        this.textContent = " Light Mode";
-    } else {
-        this.textContent = " Dark Mode";
-    }
+document.getElementById("dark-mode-btn").addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    this.textContent = " Light Mode";
+  } else {
+    this.textContent = " Dark Mode";
+  }
 });
 
 
