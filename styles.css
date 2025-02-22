@@ -87,12 +87,14 @@ header.scrolled {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .dark-mode-toggle button {
   background: #007BFF;
   border: none;
-  padding: 8px 12px;
+  padding: 3px 6px;
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
