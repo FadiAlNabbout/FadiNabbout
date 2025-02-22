@@ -318,6 +318,33 @@ body.dark-mode .hero-content p {
   color: #fff;
 }
 
+/* Certifications Section */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.cert-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+.cert-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.cert-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar .nav-links {
