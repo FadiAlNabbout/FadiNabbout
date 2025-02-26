@@ -372,9 +372,10 @@ body.dark-mode .hero-content p {
     display: none;
     flex-direction: column;
     background: rgba(200, 200, 200, 0.8);
+    color: black;
     position: fixed;
-    bottom: 14px;
-    right: 10px;
+    bottom: 20px;
+    right: 13px;
     border-radius: 5px;
     padding: 1rem;
   }
@@ -388,8 +389,8 @@ body.dark-mode .hero-content p {
   /* Mobile Dropdown Menu */
   .mobile-nav {
     position: fixed;
-    bottom: 14px; /* Adjust to be above the hamburger */
-    right: 10px; /* Align with the hamburger */
+    bottom: 20px; /* Adjust to be above the hamburger */
+    right: 13px; /* Align with the hamburger */
     background: grey;
     padding: 10px;
     border-radius: 8px;
