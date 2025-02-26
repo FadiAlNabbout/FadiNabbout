@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", function() {
   const mobileMenu = document.querySelector('.mobile-menu');
   const navLinks = document.querySelector('.nav-links');
   mobileMenu.addEventListener('click', function() {
+    const rect = mobileMenu.getBoundingClientRect();
+     // Adjust the dropdown menu to appear near the button
+    navLinks.style.bottom = `${window.innerHeight - rect.bottom + 10}px`;
+    navLinks.style.right = `${window.innerWidth - rect.right}px`;
     navLinks.classList.toggle('active');
     mobileMenu.classList.toggle('active');
   });
