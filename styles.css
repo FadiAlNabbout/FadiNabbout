@@ -96,10 +96,11 @@ header.scrolled {
   background: #007BFF;
   color: #fff;
   padding: 0.8rem 1.5rem;
-  border-radius: 2px;
-  font-size: 1rem;
+  border-radius: 10px;
+  font-size: 1.15rem;
   transition: transform 0.2s, background 0.2s;
   margin-top: 1rem;
+  margin-left: 2rem; 
 }
 .dark-mode-toggle button:hover {
   background: #0056b3;
