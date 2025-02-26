@@ -371,15 +371,16 @@ body.dark-mode .hero-content p {
   .navbar .nav-links {
     display: none;
     flex-direction: column;
-    background: rgba(51, 51, 51, 0.9);
-    position: absolute;
-    top: 60px;
-    right: 20px;
+    background: rgba(200, 200, 200, 0.8);
+    position: fixed;
+    bottom: 14px;
+    right: 10px;
     border-radius: 5px;
     padding: 1rem;
   }
   .navbar .nav-links li {
     margin: 0.5rem 0;
+    color: black;
   }
   .mobile-menu {
     display: flex;
