@@ -312,9 +312,7 @@ body.dark-mode {
 body.dark-mode header {
   background: #111;
 }
-body.dark-mode .navbar .nav-links{
-background: rgba(150, 150, 150, 0.3)
-}
+
 body.dark-mode .navbar .nav-links li a {
   color: #fff;
 }
