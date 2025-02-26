@@ -111,8 +111,11 @@ header.scrolled {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  position: absolute;
-  right: 20px;
+  position: fixed;
+  right: 3px;
+  bottom: 12px;
+  background: black;
+  border-radius: 12px;
 }
 .mobile-menu span {
   height: 3px;
