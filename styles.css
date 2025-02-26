@@ -74,7 +74,7 @@ header.scrolled {
   margin-left: 2rem;
 }
 .navbar .nav-links li a {
-  color: #fff;
+  color: darkblue;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
@@ -313,7 +313,7 @@ body.dark-mode header {
   background: #111;
 }
 body.dark-mode .navbar .nav-links li a {
-  color: #ddd;
+  color: #fff;
 }
 body.dark-mode .navbar .nav-links li a:hover {
   color: #007BFF;
