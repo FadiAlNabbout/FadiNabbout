@@ -277,7 +277,7 @@ p {
 #back-to-top {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  left: 40px;
   background: #007BFF;
   color: #fff;
   border: none;
