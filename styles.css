@@ -384,8 +384,23 @@ body.dark-mode .hero-content p {
   .mobile-menu {
     display: flex;
   }
+  /* Mobile Dropdown Menu */
+  .mobile-nav {
+    position: fixed;
+    bottom: 50px; /* Adjust to be above the hamburger */
+    right: 10px; /* Align with the hamburger */
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    display: none; /* Hide initially */
+ }
+
+ /* Show dropdown when active */
+ .mobile-nav.active {
+    display: block;
+ }
   /* When mobile menu is active, display the nav-links */
-  .nav-links.active {
+ .nav-links.active {
     display: flex;
   }
 }
