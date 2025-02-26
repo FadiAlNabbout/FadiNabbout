@@ -387,9 +387,9 @@ body.dark-mode .hero-content p {
   /* Mobile Dropdown Menu */
   .mobile-nav {
     position: fixed;
-    bottom: 50px; /* Adjust to be above the hamburger */
+    bottom: 14px; /* Adjust to be above the hamburger */
     right: 10px; /* Align with the hamburger */
-    background: rgba(0, 0, 0, 0.9);
+    background: grey;
     padding: 10px;
     border-radius: 8px;
     display: none; /* Hide initially */
@@ -398,6 +398,7 @@ body.dark-mode .hero-content p {
  /* Show dropdown when active */
  .mobile-nav.active {
     display: block;
+   color: black;
  }
   /* When mobile menu is active, display the nav-links */
  .nav-links.active {
