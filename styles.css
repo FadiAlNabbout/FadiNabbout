@@ -93,7 +93,7 @@ header.scrolled {
 
 .dark-mode-toggle button {
   text-decoration: none;
-  background: #007BFF;
+  background: #000;
   color: #fff;
   padding: 0.8rem 1.5rem;
   border-radius: 10px;
