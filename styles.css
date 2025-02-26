@@ -107,7 +107,7 @@ header.scrolled {
 
 /* Mobile Menu */
 .mobile-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   cursor: pointer;
   position: absolute;
