@@ -74,7 +74,7 @@ header.scrolled {
   margin-left: 2rem;
 }
 .navbar .nav-links li a {
-  color: darkblue;
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
@@ -312,6 +312,9 @@ body.dark-mode {
 body.dark-mode header {
   background: #111;
 }
+body.dark-mode .navbar .nav-links{
+background: rgba(150, 150, 150, 0.3)
+}
 body.dark-mode .navbar .nav-links li a {
   color: #fff;
 }
@@ -371,7 +374,7 @@ body.dark-mode .hero-content p {
   .navbar .nav-links {
     display: none;
     flex-direction: column;
-    background: rgba(200, 200, 200, 0.8);
+    background: rgba(50, 50, 50, 0.5);
     color: black;
     position: fixed;
     bottom: 20px;
@@ -391,7 +394,7 @@ body.dark-mode .hero-content p {
     position: fixed;
     bottom: 20px; /* Adjust to be above the hamburger */
     right: 13px; /* Align with the hamburger */
-    background: grey;
+    background: black;
     padding: 10px;
     border-radius: 8px;
     display: none; /* Hide initially */
