@@ -26,11 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
           e.preventDefault();
           const targetId = this.getAttribute('href');
           const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-              targetElement.scrollIntoView({
-                  behavior: 'smooth'
-              });
-          }
+           if (targetElement) {
+            const navbarHeight = document.querySelector("header").offsetHeight; // Get navbar height
+            const targetPosition = targetElement.offsetTop - navbarHeight - 10; // Adjust offset
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"
+            });
+        }
           // Close mobile menu if open
           if (navLinks.classList.contains('active')) {
               navLinks.classList.remove('active');
