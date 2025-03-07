@@ -82,7 +82,7 @@ header.scrolled {
 .navbar .nav-links li a:hover {
   color: #007BFF;
 }
-.navbar .nav-links li a:active {
+.navbar .nav-links li a.active {
   color: #007BFF; /* Highlight color */
   border-bottom: 2px solid #007BFF;
   transition: border-bottom 0.3s, color 0.3s;
