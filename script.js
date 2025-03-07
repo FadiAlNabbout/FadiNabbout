@@ -105,3 +105,32 @@ document.getElementById("dark-mode-btn").addEventListener("click", function() {
       sectionObserver.observe(section);
   });
 });
+// Highlight nav link for visible section
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-links li a');
+
+const observerOptions = {
+  threshold: 0.6 // Adjust based on how much of the section needs to be visible
+};
+
+const observerCallback = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const sectionId = entry.target.id;
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        // Remove the leading '#' and compare with section id
+        if (link.getAttribute('href').substring(1) === sectionId) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+
